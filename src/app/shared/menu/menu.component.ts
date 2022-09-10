@@ -17,7 +17,6 @@ export class MenuComponent implements OnInit {
       {
         label: 'Angular Pipes',
         icon: 'pi pi-desktop',
-        style: {'margin-left': 'auto'},
         items: [
           {
             label: 'Text and dates',
