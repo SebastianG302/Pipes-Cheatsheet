@@ -7,13 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   nombre: string = 'sebastian guerrero';
-  obj = {
-    nombre: 'fernando'
-  }
 
-  mostrarNombre(){
-    console.log( this.nombre )
-  }
+
+
 
 }
 

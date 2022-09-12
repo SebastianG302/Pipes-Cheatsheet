@@ -9,6 +9,8 @@ export class BasicComponent {
 
   constructor() { }
 
-  name: string = 'seBasTiaN gUerRero'
+  name: string = 'seBasTiaN gUerRero';
+
+  todaysDate: Date = new Date()
 
 }
