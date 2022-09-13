@@ -1,1 +1,18 @@
-<p>numbers works!</p>
+<section>
+    <h1>DecimalPipe and PercentPipe</h1>
+    <p>Pipes that are typically included in Common Module.</p>
+    <hr>
+    <h3>e.g. "{{netSales}}"</h3>
+    <div class="grid">
+        <div class="col-12 md:col-6 lg:col-4 ">
+            <p-card header="DecimalPipe" subheader="Formats a value according to digit options and locale rules">
+                <code>
+                    netSales | number<br>
+                    netSales | number:'1.2-2'
+                </code>
+                <li>{{ netSales | number }}</li>
+                <li>{{netSales | number:'1.2-2'}}</li>
+            </p-card>
+        </div>
+    </div>
+</section>
