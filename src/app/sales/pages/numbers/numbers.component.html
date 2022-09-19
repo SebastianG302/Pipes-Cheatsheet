@@ -14,5 +14,21 @@
                 <li>{{netSales | number:'1.2-2'}}</li>
             </p-card>
         </div>
+        <div class="col-12 md:col-6 lg:col-4 ">
+            <p-card header="CurrencyPipe" subheader="Transforms a number to a currency string, formatted according to locale rules that determine group sizing and separator, decimal-point character, and other locale-specific configurations.">
+                <code>
+                    netSales | currency:'USD':'symbol-narrow':'1.4-4' <br>
+                </code>
+                <li>{{ netSales | currency:'USD':'symbol-narrow':'1.4-4'}}</li>
+            </p-card>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4 ">
+            <p-card header="PercentPipe" subheader="Transforms a number to a percentage string, formatted according to locale rules that determine group sizing and separator, decimal-point character, and other locale-specific configurations.">
+                <code>
+                    percentage | percent <br>
+                </code>
+                <li>{{ percentage | percent }}</li>
+            </p-card>
+        </div>
     </div>
 </section>
