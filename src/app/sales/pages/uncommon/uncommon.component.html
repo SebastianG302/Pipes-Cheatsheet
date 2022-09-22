@@ -1,1 +1,26 @@
-<p>uncommon works!</p>
+<h1>Uncommon pipes</h1>
+<p></p>
+<hr>
+<div class="grid">
+    <div class="col">
+        <p-fieldset legend="i18nSelect" [toggleable]="true">
+            Hi, it's a pleasure invite you to our event.
+        </p-fieldset>
+    </div>
+    <div class="col">
+
+        <p-fieldset legend="i18nPlural" [toggleable]="true">
+            <code>
+                <span class="comments">//Typescript</span><br>
+                customers: string[] = ['Juan', 'David'];<br>
+
+                customersMap = &#123;<br>
+                &nbsp;'=0': 'not customers waiting',<br>
+                &nbsp;'=1': '1 customer waiting',<br>
+                &nbsp;'other': this.customers.length + ' customers waiting'<br>
+                    &#125;
+            </code>
+            We currently have {{customers.length | i18nPlural:customersMap}}
+        </p-fieldset>
+    </div>
+</div>

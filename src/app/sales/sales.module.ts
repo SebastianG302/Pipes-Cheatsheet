@@ -7,6 +7,7 @@ import { NumbersComponent } from './pages/numbers/numbers.component';
 import { UncommonComponent } from './pages/uncommon/uncommon.component';
 import { BasicComponent } from './pages/basic/basic.component';
 import { SortComponent } from './pages/sort/sort.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
