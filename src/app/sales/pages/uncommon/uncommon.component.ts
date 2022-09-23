@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-uncommon',
@@ -9,11 +9,33 @@ export class UncommonComponent {
 
   constructor(){}
 
-  customers: string[] = ['Juan', 'David'];
+  sex: string = 'F';
+
+  sexMap = {
+    'M': 'He',
+    'F': 'She'
+  }
+
+  customers: number = 1;
 
   customersMap = {
-    '=0': 'not customers waiting',
-    '=1': '1 customer waiting',
-    'other': this.customers.length + ' customers waiting'
+    '=0': 'customers waiting',
+    '=1': 'customer waiting',
+    'other':'customers waiting'
   }
+
+  changeSex(){
+    this.sex === 'F' ? this.sex = 'M' : this.sex = 'F';
+  }
+
+  increase(){
+    this.customers += 1;
+  }
+
+  decrease(){
+    if(this.customers > 0)
+      this.customers -= 1;
+  }
+
+  
 }

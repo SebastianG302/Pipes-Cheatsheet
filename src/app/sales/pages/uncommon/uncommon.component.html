@@ -4,7 +4,19 @@
 <div class="grid">
     <div class="col">
         <p-fieldset legend="i18nSelect" [toggleable]="true">
-            Hi, it's a pleasure invite you to our event.
+            <code>
+                <span class="comments">//Typescript</span><br>
+                sex: string = '{{sex}}';<br>
+
+                sexMap = &#123;<br>
+                &nbsp;'M': 'He',<br>
+                &nbsp;'F': 'She'<br>
+                &#125;<br>
+                <span class="comments">//HTML</span><br>
+                sex | i18nSelect : sexMap
+            </code>
+            <button pButton type="button" (click)="changeSex()" class="p-button-outlined p-button-rounded">Change sex</button>
+            <p>{{sex | i18nSelect: sexMap}} is 27 year old.</p>
         </p-fieldset>
     </div>
     <div class="col">
@@ -12,15 +24,20 @@
         <p-fieldset legend="i18nPlural" [toggleable]="true">
             <code>
                 <span class="comments">//Typescript</span><br>
-                customers: string[] = ['Juan', 'David'];<br>
+                customers: number = {{customers}};<br>
 
                 customersMap = &#123;<br>
-                &nbsp;'=0': 'not customers waiting',<br>
-                &nbsp;'=1': '1 customer waiting',<br>
-                &nbsp;'other': this.customers.length + ' customers waiting'<br>
-                    &#125;
+                &nbsp;'=0':'not customers waiting',<br>
+                &nbsp;'=1':'customer waiting',<br>
+                &nbsp;'other':'customers waiting'<br>
+                &#125;<br>
+                <span class="comments">//HTML</span><br>
+                customers | i18nPlural : customersMap
             </code>
-            We currently have {{customers.length | i18nPlural:customersMap}}
+
+            <button pButton type="button" (click)="decrease()" icon="pi pi-minus" class="p-button-rounded p-button-outlined"></button>
+            <button pButton type="button" (click)="increase()" icon="pi pi-plus" class="p-button-rounded p-button-outlined"></button>
+            <p>We currently have {{customers}} {{customers | i18nPlural:customersMap}}</p>
         </p-fieldset>
     </div>
 </div>
