@@ -39,5 +39,12 @@ export class UncommonComponent {
       this.customers -= 1;
   }
 
+  // Keyvalue pipe
+  person = {
+    name: 'Sebastian',
+    age: 19,
+    address: 'Ottawa, Canada'
+  }
   
+
 }

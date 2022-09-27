@@ -62,3 +62,26 @@
         </p-fieldset>
     </div>
 </div>
+<div class="grid">
+    <div class="col">
+        <p-fieldset legend="keyValuePipe" [toggleable]="true">
+
+            <code>
+                <span class="comments">//Typescript</span><br>
+                person = &#123;<br>
+                    &nbsp;name: 'Sebastian',<br>
+                    &nbsp;age: 19,<br>
+                    &nbsp;address: 'Ottawa, Canada'<br>
+                &#125;
+                <span class="comments">//HTML</span><br>
+                *ngFor="let property of person | keyvalue"<br>
+                &nbsp; property.key property.value
+            </code>
+            <ul>
+                <li *ngFor="let property of person | keyvalue">
+                    <b>{{property.key | titlecase}}: {{property.value}}</b>
+                </li>
+            </ul>
+        </p-fieldset>
+    </div>
+</div>
