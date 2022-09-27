@@ -16,6 +16,8 @@ export class UncommonComponent {
     'F': 'She'
   }
 
+  customersArray: string[] = ['María', 'Pedro', 'Juan', 'Fernando', 'Sebastian'];
+
   customers: number = 1;
 
   customersMap = {

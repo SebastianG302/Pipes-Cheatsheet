@@ -15,12 +15,12 @@
                 <span class="comments">//HTML</span><br>
                 sex | i18nSelect : sexMap
             </code>
-            <button pButton type="button" (click)="changeSex()" class="p-button-outlined p-button-rounded">Change sex</button>
+            <button pButton type="button" (click)="changeSex()" class="p-button-outlined p-button-rounded">Change
+                sex</button>
             <p>{{sex | i18nSelect: sexMap}} is 27 year old.</p>
         </p-fieldset>
     </div>
     <div class="col">
-
         <p-fieldset legend="i18nPlural" [toggleable]="true">
             <code>
                 <span class="comments">//Typescript</span><br>
@@ -35,9 +35,27 @@
                 customers | i18nPlural : customersMap
             </code>
 
-            <button pButton type="button" (click)="decrease()" icon="pi pi-minus" class="p-button-rounded p-button-outlined"></button>
-            <button pButton type="button" (click)="increase()" icon="pi pi-plus" class="p-button-rounded p-button-outlined"></button>
+            <button pButton type="button" (click)="decrease()" icon="pi pi-minus"
+                class="p-button-rounded p-button-outlined"></button>
+            <button pButton type="button" (click)="increase()" icon="pi pi-plus"
+                class="p-button-rounded p-button-outlined"></button>
             <p>We currently have {{customers}} {{customers | i18nPlural:customersMap}}</p>
+        </p-fieldset>
+    </div>
+    <div class="col">
+        <p-fieldset legend="slicePipe" [toggleable]="true">
+            <code>
+                <span class="comments">//Typescript</span><br>
+                customersArray: string[] = ['María', 'Pedro', 'Juan', 'Fernando', 'Sebastian'];<br>
+            </code>
+            <b>Original</b>
+            <p>{{customersArray}}</p>
+
+            <b>slice:0:2</b>
+            <p>{{customersArray | slice:0:2}}</p>
+
+            <b>slice:1:2</b>
+            <p>{{customersArray | slice:0:2}}</p>
         </p-fieldset>
     </div>
 </div>
