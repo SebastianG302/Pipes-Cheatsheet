@@ -51,15 +51,15 @@
             </div>
             <div class="col-12 md:col-6">
                 <p-card header="Output">
-
-                    <li>{{ todaysDate | date }}</li>
-                    <li>{{ todaysDate | date:'short' }}</li>
-                    <li>{{ todaysDate | date:'long' }}</li>
-                    <li>{{ todaysDate | date:'EEEE, yyyy, G' }}</li>
-                    <br>
-                    <li>{{ todaysDate | date:'long': 'GMT:-6' }}</li>
-                    <li>{{ todaysDate | date:'long': 'GMT:-6': 'es' }}</li>
-
+                    <ul>
+                        <li>{{ todaysDate | date }}</li>
+                        <li>{{ todaysDate | date:'short' }}</li>
+                        <li>{{ todaysDate | date:'long' }}</li>
+                        <li>{{ todaysDate | date:'EEEE, yyyy, G' }}</li>
+                        <br>
+                        <li>{{ todaysDate | date:'long': 'GMT:-6' }}</li>
+                        <li>{{ todaysDate | date:'long': 'GMT:-6': 'es' }}</li>
+                    </ul>
                 </p-card>
             </div>
         </div>
