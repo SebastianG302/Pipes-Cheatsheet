@@ -1,34 +1,34 @@
-<section>
-    <h1>DecimalPipe and PercentPipe</h1>
-    <p>Pipes that are typically included in Common Module.</p>
-    <hr>
-    <h3>e.g. "{{netSales}}"</h3>
-    <div class="grid">
-        <div class="col-12 md:col-6 lg:col-4 ">
-            <p-card header="DecimalPipe" subheader="Formats a value according to digit options and locale rules">
-                <code>
+<h1>DecimalPipe and PercentPipe</h1>
+<p>Pipes that are typically included in Common Module.</p>
+<hr>
+<h3>e.g. "{{netSales}}"</h3>
+<div class="grid">
+    <div class="col-12 md:col-6 lg:col-4 ">
+        <p-card header="DecimalPipe" subheader="Formats a value according to digit options and locale rules">
+            <code>
                     netSales | number<br>
                     netSales | number:'1.2-2'
                 </code>
-                <li>{{ netSales | number }}</li>
-                <li>{{netSales | number:'1.2-2'}}</li>
-            </p-card>
-        </div>
-        <div class="col-12 md:col-6 lg:col-4 ">
-            <p-card header="CurrencyPipe" subheader="Transforms a number to a currency string, formatted according to locale rules that determine group sizing and separator, decimal-point character, and other locale-specific configurations.">
-                <code>
+            <li>{{ netSales | number }}</li>
+            <li>{{netSales | number:'1.2-2'}}</li>
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-4 ">
+        <p-card header="CurrencyPipe"
+            subheader="Transforms a number to a currency string, formatted according to locale rules that determine group sizing and separator, decimal-point character, and other locale-specific configurations.">
+            <code>
                     netSales | currency:'USD':'symbol-narrow':'1.4-4' <br>
                 </code>
-                <li>{{ netSales | currency:'USD':'symbol-narrow':'1.4-4'}}</li>
-            </p-card>
-        </div>
-        <div class="col-12 md:col-6 lg:col-4 ">
-            <p-card header="PercentPipe" subheader="Transforms a number to a percentage string, formatted according to locale rules that determine group sizing and separator, decimal-point character, and other locale-specific configurations.">
-                <code>
+            <li>{{ netSales | currency:'USD':'symbol-narrow':'1.4-4'}}</li>
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-4 ">
+        <p-card header="PercentPipe"
+            subheader="Transforms a number to a percentage string, formatted according to locale rules that determine group sizing and separator, decimal-point character, and other locale-specific configurations.">
+            <code>
                     percentage | percent <br>
                 </code>
-                <li>{{ percentage | percent}}</li>
-            </p-card>
-        </div>
+            <li>{{ percentage | percent}}</li>
+        </p-card>
     </div>
-</section>
+</div>

@@ -1,67 +1,67 @@
-<article>
-    <section>
-        <h1>Basic Pipes</h1>
-        <p>Pipes that are typically included in Common Module.</p>
-        <hr>
-        <h3>e.g. "{{name}}"</h3>
-        <div class="grid">
-            <div class="col-12 md:col-6 lg:col-4 ">
-                <p-card header="LowerCase" subheader="Transforms text to all lower case.">
-                    <code> name | lowercase</code>
-                    <ul><li>{{name | lowercase}}</li></ul>
-                </p-card>
-            </div>
+<h1>Basic Pipes</h1>
+<p>Pipes that are typically included in Common Module.</p>
+<hr>
+<h3>e.g. "{{name}}"</h3>
+<div class="grid">
+    <div class="col-12 md:col-6 lg:col-4 ">
+        <p-card header="LowerCase" subheader="Transforms text to all lower case.">
+            <code> name | lowercase</code>
+            <ul>
+                <li>{{name | lowercase}}</li>
+            </ul>
+        </p-card>
+    </div>
 
-            <div class="col-12 md:col-6 lg:col-4">
-                <p-card header="UpperCase" subheader="Transforms text to all upper case.">
-                    <code>name | uppercase</code>
-                    <ul><li>{{name | uppercase}}</li></ul>
-                </p-card>
-            </div>
-            <div class="col-12 md:col-6 lg:col-4">
-                <p-card header="TitleCase" subheader="Transforms text to title case.">
-                    <code>name | titleclase</code>
-                    <ul><li>{{name | titlecase}}</li></ul>
-                </p-card>
-            </div>
-        </div>
-    </section>
+    <div class="col-12 md:col-6 lg:col-4">
+        <p-card header="UpperCase" subheader="Transforms text to all upper case.">
+            <code>name | uppercase</code>
+            <ul>
+                <li>{{name | uppercase}}</li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-4">
+        <p-card header="TitleCase" subheader="Transforms text to title case.">
+            <code>name | titleclase</code>
+            <ul>
+                <li>{{name | titlecase}}</li>
+            </ul>
+        </p-card>
+    </div>
+</div>
 
-    <section>
-        <h1>Date Pipes</h1>
-        <p>Pipes that are typically included in Common Module.</p>
-        <hr>
-        <h3>e.g. "{{todaysDate}}"</h3>
-        <div class="grid">
-            <div class="col-12 md:col-6">
-                <p-card header="Pipes code">
-                    <code>
-                        todaysDate | date<br>
-                        todaysDate | date:'short'<br>
-                        todaysDate | date:'long'<br>
-                        todaysDate | date:'EEEE, yyyy, G' <span class="comments">//custom pipe</span>
-                    </code>
-                    <br>
-                    <code>
-                        todaysDate | date:'long': 'GMT:-6'<br>
-                        todaysDate | date:'long': 'GMT:-6': 'es'
-                    </code>
 
-                </p-card>
-            </div>
-            <div class="col-12 md:col-6">
-                <p-card header="Output">
-                    <ul>
-                        <li>{{ todaysDate | date }}</li>
-                        <li>{{ todaysDate | date:'short' }}</li>
-                        <li>{{ todaysDate | date:'long' }}</li>
-                        <li>{{ todaysDate | date:'EEEE, yyyy, G' }}</li>
-                        <br>
-                        <li>{{ todaysDate | date:'long': 'GMT:-6' }}</li>
-                        <li>{{ todaysDate | date:'long': 'GMT:-6': 'es' }}</li>
-                    </ul>
-                </p-card>
-            </div>
-        </div>
-    </section>
-</article>
+<h1>Date Pipes</h1>
+<p>Pipes that are typically included in Common Module.</p>
+<hr>
+<h3>e.g. "{{todaysDate}}"</h3>
+<div class="grid">
+    <div class="col-12 md:col-6">
+        <p-card header="Pipes code">
+            <code>
+                todaysDate | date<br>
+                todaysDate | date:'short'<br>
+                todaysDate | date:'long'<br>
+                todaysDate | date:'EEEE, yyyy, G' <span class="comments">//custom pipe</span>
+            </code>
+            <br>
+            <code>
+                todaysDate | date:'long': 'GMT:-6'<br>
+                todaysDate | date:'long': 'GMT:-6': 'es'
+            </code>
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6">
+        <p-card header="Output">
+            <ul>
+                <li>{{ todaysDate | date }}</li>
+                <li>{{ todaysDate | date:'short' }}</li>
+                <li>{{ todaysDate | date:'long' }}</li>
+                <li>{{ todaysDate | date:'EEEE, yyyy, G' }}</li>
+                <br>
+                <li>{{ todaysDate | date:'long': 'GMT:-6' }}</li>
+                <li>{{ todaysDate | date:'long': 'GMT:-6': 'es' }}</li>
+            </ul>
+        </p-card>
+    </div>
+</div>

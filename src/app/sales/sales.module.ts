@@ -8,6 +8,7 @@ import { UncommonComponent } from './pages/uncommon/uncommon.component';
 import { BasicComponent } from './pages/basic/basic.component';
 import { SortComponent } from './pages/sort/sort.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MayusPipe } from './pipes/mayus.pipe';
 
 
 
@@ -16,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NumbersComponent,
     UncommonComponent,
     BasicComponent,
-    SortComponent
+    SortComponent,
+    MayusPipe
   ],
   imports: [
     CommonModule,

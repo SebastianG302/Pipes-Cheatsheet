@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SortComponent implements OnInit {
 
+  capitalized: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  transform(){
+    this.capitalized ? this.capitalized = false : this.capitalized = true;
+
   }
 
 }

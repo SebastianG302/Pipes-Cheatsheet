@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-uncommon',
@@ -45,6 +46,15 @@ export class UncommonComponent {
     age: 19,
     address: 'Ottawa, Canada'
   }
+
+  //Json pipe
+  students = {
+    id: '152452',
+    name: 'Daiana',
+    grade: 'Third'
+  }
+
+  myObservable = interval(1000);
   
 
 }

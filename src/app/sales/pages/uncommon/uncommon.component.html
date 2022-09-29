@@ -42,6 +42,45 @@
             <p>We currently have {{customers}} {{customers | i18nPlural:customersMap}}</p>
         </p-fieldset>
     </div>
+
+    <div class="col">
+        <p-fieldset legend="json pipe" [toggleable]="true">
+            <code>
+                <span class="comments">//Typescript</span><br>
+                students = &#123;<br>
+                &nbsp;id: '152452',<br>
+                &nbsp;name: 'Daiana',<br>
+                &nbsp;grade: 'Third'<br>
+                &#125;<br>
+                <span class="comments">//HTML</span><br>
+                students | json
+            </code>
+            <pre>{{ students | json }}</pre>
+        </p-fieldset>
+    </div>
+
+</div>
+<div class="grid">
+    <div class="col">
+        <p-fieldset legend="keyValuePipe" [toggleable]="true">
+            <code>
+                <span class="comments">//Typescript</span><br>
+                person = &#123;<br>
+                    &nbsp;name: 'Sebastian',<br>
+                    &nbsp;age: 19,<br>
+                    &nbsp;address: 'Ottawa, Canada'<br>
+                &#125;
+                <span class="comments">//HTML</span><br>
+                *ngFor="let property of person | keyvalue"<br>
+                &nbsp; property.key property.value
+            </code>
+            <ul>
+                <li *ngFor="let property of person | keyvalue">
+                    <b>{{property.key | titlecase}}: {{property.value}}</b>
+                </li>
+            </ul>
+        </p-fieldset>
+    </div>
     <div class="col">
         <p-fieldset legend="slicePipe" [toggleable]="true">
             <code>
@@ -61,27 +100,19 @@
             <p>{{customersArray | slice:0:2}}</p>
         </p-fieldset>
     </div>
-</div>
-<div class="grid">
-    <div class="col">
-        <p-fieldset legend="keyValuePipe" [toggleable]="true">
 
+    <div class="col">
+
+        <p-fieldset legend="Async pipe" [toggleable]="true">
             <code>
                 <span class="comments">//Typescript</span><br>
-                person = &#123;<br>
-                    &nbsp;name: 'Sebastian',<br>
-                    &nbsp;age: 19,<br>
-                    &nbsp;address: 'Ottawa, Canada'<br>
-                &#125;
+                myObservable = interval(1000);<br>
                 <span class="comments">//HTML</span><br>
-                *ngFor="let property of person | keyvalue"<br>
-                &nbsp; property.key property.value
+                 myObservable | async 
             </code>
-            <ul>
-                <li *ngFor="let property of person | keyvalue">
-                    <b>{{property.key | titlecase}}: {{property.value}}</b>
-                </li>
-            </ul>
+
+            <pre>{{ myObservable | async }}</pre>
         </p-fieldset>
     </div>
+
 </div>
