@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { BasicComponent } from './sales/pages/basic/basic.component';
 import { NumbersComponent } from './sales/pages/numbers/numbers.component';
-import { SortComponent } from './sales/pages/sort/sort.component';
+
 import { UncommonComponent } from './sales/pages/uncommon/uncommon.component';
 
 
@@ -20,10 +20,6 @@ const routes: Routes = [
   {
     path: 'uncommon',
     component: UncommonComponent
-  },
-  {
-    path: 'sort',
-    component: SortComponent
   },
   {
     path: '**',

@@ -34,11 +34,6 @@ export class MenuComponent implements OnInit {
             routerLink: 'uncommon'
           },
         ],
-      },
-      {
-        label: 'Custom Pipes',
-        icon: ' pi pi-cog',
-        routerLink: 'sort'
       }
     ];
   }
